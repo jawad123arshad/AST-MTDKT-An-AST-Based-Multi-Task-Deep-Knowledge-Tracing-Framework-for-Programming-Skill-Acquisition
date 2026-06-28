@@ -8,7 +8,7 @@ A Multi-Task Deep Knowledge Tracing framework that combines **Abstract Syntax Tr
 
 Traditional Deep Knowledge Tracing (DKT) models predict student performance using only binary correctness signals, ignoring the rich information embedded in the student's actual source code. This project addresses that gap by:
 
-1. **Parsing student Python submissions with `ast`** to automatically detect which programming concepts (loops, recursion, data structures, etc.) were used — with no manual labeling required.
+1. **Parsing student Python submissions with `ast`** to automatically detect which programming concepts (loops, recursion, data structures, etc.) were used  with no manual labeling required.
 2. **Encoding each interaction** as a multi-hot vector capturing *which skills were used* and *whether the submission was correct*.
 3. **Training a multi-task LSTM** that shares a hidden representation between a correctness-prediction head and a skill-prediction head.
 4. **Evaluating rigorously** with user-level (not interaction-level) 5-fold cross-validation to prevent data leakage between train and validation sets.
