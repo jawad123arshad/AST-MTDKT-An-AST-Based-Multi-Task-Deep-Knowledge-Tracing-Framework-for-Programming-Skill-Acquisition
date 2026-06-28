@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/29437112/README.md)
 # AST-MTDKT: AST-Based Multi-Task Deep Knowledge Tracing for Programming Skill Acquisition
 
 A Multi-Task Deep Knowledge Tracing framework that combines **Abstract Syntax Tree (AST)-based programming skill extraction** with an **LSTM-based deep learning model** to jointly predict (1) whether a student will solve their next programming task correctly, and (2) which programming skills they will demonstrate. The framework is evaluated on Python submissions from the **Project CodeNet** dataset using leakage-free, user-level 5-fold cross-validation, and is benchmarked against a **Multi-Task Bayesian Knowledge Tracing (BKT)** baseline.
@@ -204,17 +203,7 @@ A CUDA-capable GPU is recommended but not required — the code automatically fa
 
 ## Results
 
-Results (overall and per-skill Accuracy / AUC / Precision / Recall / F1, averaged across 5 folds) are printed at the end of each model's training section in the notebook. Paste your own run's output here once you've trained on your full dataset, for example:
-
-```
-AVERAGE PERFORMANCE (Multi-Task AST-DKT)
---------------------------------------------------------------------
-Accuracy : 0.XXXX
-AUC      : 0.XXXX
-Precision: 0.XXXX
-Recall   : 0.XXXX
-F1-Score : 0.XXXX
-```
+Results (overall and per-skill Accuracy, AUC, Precision, Recall, F1, averaged across 5 folds) are printed at the end of each model's training section in the notebook, for both the Multi-Task AST-DKT model and the Multi-Task AST-BKT baseline.
 
 ---
 
@@ -224,20 +213,6 @@ F1-Score : 0.XXXX
 - Expand the skill taxonomy with finer-grained programming concepts.
 - Extend AST-based skill extraction to additional programming languages beyond Python.
 - Incorporate code-quality or style features alongside structural AST features.
-
----
-
-## Citation
-
-If you use this work, please cite it as:
-
-```
-@misc{astmtdkt,
-  title={AST-MTDKT: An AST-Based Multi-Task Deep Knowledge Tracing Framework for Programming Skill Acquisition},
-  author={<your name>},
-  year={2026}
-}
-```
 
 ---
 
